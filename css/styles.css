@@ -126,7 +126,7 @@ footer {
   background-color: #1e1e26;
   color: rgb(249, 249, 249);
   justify-content: space-around;
-  padding: 40px 20px;
+  padding: 52px 20px;
 }
 .Union_logo_iconos {
   display: flex;
@@ -136,6 +136,7 @@ footer {
 
 footer li {
   list-style: none;
+  margin-bottom: 20px;
 }
 
 .Flex_iconos {
@@ -147,4 +148,42 @@ footer li {
   .section_tennista {
     flex-direction: column;
   }
+}
+
+.section_year {
+  display: flex;
+  height: 224px;
+  background-color: #8b48bf;
+  color: rgb(249, 249, 249);
+  justify-content: space-around;
+  padding: 52px 2px;
+}
+.section_year p {
+  font-size: 40px;
+}
+
+.Goforlt {
+  width: 134px;
+  height: 44px;
+  background-color: #fff;
+  color: #8b48bf;
+  padding: 10px 25px 10px 25px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.ListaConEspacios {
+  list-style-type: disc;
+  margin-bottom: 8px;
+}
+
+.Copyright {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #8c8c94;
+  text-align: right;
+  padding: 81px 164px 43px;
+  border-radius: 50px;
 }
