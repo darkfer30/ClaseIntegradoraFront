@@ -52,7 +52,9 @@ body {
   border: none;
   box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
   font-weight: 500;
+  font-size: 13px;
   cursor: pointer;
+  font-family: inherit;
 }
 
 .clase_boton {
@@ -64,6 +66,9 @@ body {
   border: none;
   border-radius: 50px;
   cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
 }
 /* Fin estilos del header */
 /* Estilos section_tennista */
@@ -92,6 +97,7 @@ body {
     font-weight: 700;
     letter-spacing: -2px;
     line-height: 1.14;
+    color: var(--azul-muy-oscuro);
   }
   p {
     width: 450px;
@@ -104,6 +110,8 @@ body {
   color: var(--variante-gris-claro);
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  gap: 40px;
   padding: 40px 220px;
   h2 {
     width: 460px;
@@ -117,17 +125,102 @@ body {
   }
 }
 /* Fin estilos section_pros1 */
-/*Estilos Section Pros2*/
-.boton_section_pros2 {
+/*Estilos section_pros2*/
+.section_pros2 {
+  margin: 0 auto;
+  padding: 40px 0px;
+  background-color: var(--variante-gris-claro);
+}
+.section_pros2_top {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.section_pros2_bottom {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 24px;
+}
+.section_pros2_card {
+  width: 530px;
+}
+.section_pros2_card_title {
+  display: flex;
+  align-items: center;
+}
+.section_pros2_card_title button {
   width: 69px;
   height: 43px;
-  background-color: #8b48bf;
-  color: #ffffff;
-  padding: 10px 25px 10px 25px;
+  background-color: var(--violeta);
+  color: white;
   border: none;
   border-radius: 30px;
   cursor: pointer;
+  font-weight: 700;
+  font-family: inherit;
 }
+.section_pros2_card_title p {
+  font-weight: 500;
+  margin-left: 20px;
+  color: var(--azul-muy-oscuro);
+}
+.section_pros2_card_body {
+  line-height: 1.5;
+  padding-left: 89px;
+  color: #B3B2B7;
+}
+/*Fin estilos section_pros2*/
+/*Estilos section_best*/
+.section_best {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 97px 0px 180px 0px;
+  color: var(--azul-muy-oscuro);
+}
+.section_best h2 {
+  font-size: 39px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: -1px;
+  color: var(--azul-muy-oscuro);
+}
+.section_best_comments {
+  display: flex;
+  background-color: var(--variante-gris-claro);
+  margin: 100px 0px 45px 0px;
+}
+.section_best_comments_card {
+  width: 445px;
+  padding: 52px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.section_best_comments_card img {
+  width: 100%;
+  height: auto;
+  max-width: 70px;
+  position: absolute;
+  top: -35px;
+}
+.section_best_comments_card p:first-of-type {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -.5px;
+  color: var(--azul-muy-oscuro);
+}
+.section_best_comments_card p:last-of-type {
+  font-weight: 400;
+  line-height: 1.5;
+  color: #B3B2B7;
+  text-align: center;
+  margin-top: 21px;
+}
+/*Fin estilos section_best*/
 
 /*footer*/
 footer {
