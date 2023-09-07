@@ -1,11 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
 
 :root {
-  /* Violeta: #8B48BF
-Celeste brillante: #3CDDF3 */
-  /* Azul grisáceo oscuro: #1E1E26
-Azul muy oscuro: #232851
-Variante gris claro: rgb (249, 249, 249) */
   --violeta: #8b48bf;
   --celeste-brillante: #3cddf3;
   --azul-grisaceo-oscuro: #1e1e26;
@@ -28,27 +23,36 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  max-width: 1400px;
   height: 174px;
+  margin: 0 auto;
 }
-
 .header_logo {
   height: 25px;
 }
-
 .header_nav {
   display: flex;
   gap: 28px;
+  li {
+    list-style: none;
+    font-size: 13px;
+    color: var(--azul-grisaceo-oscuro);
+  }
+  li:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
 }
-
-.header_nav li {
-  list-style: none;
-  font-size: 13px;
-  color: var(--azul-grisaceo-oscuro);
-}
-
-.header_nav li:hover {
+.header_button {
+  width: 134px;
+  height: 44px;
+  background-color: var(--violeta);
+  color: var(--variante-gris-claro);
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+  font-weight: 500;
   cursor: pointer;
-  opacity: 0.6;
 }
 
 .clase_boton {
@@ -63,34 +67,35 @@ body {
 }
 /* Fin estilos del header */
 /* Estilos section_tennista */
-.section_tennista {
+.section_tenista {
   display: flex;
+  padding: 68px 40px;
   justify-content: center;
+  align-items: center;
 }
-.section_tennista_container {
-  display: flex;
-  list-style: none;
-  max-width: 1090px;
+.section_tenista_img {
+  width: 100%;
+  height: auto;
+  max-width: 540px;
 }
-.section_tennista img {
-  width: 540px;
-}
-.texto_tennista {
-  text-align: right;
+.section_tenista_texto {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
   gap: 28px;
-  margin-left: 100px;
-}
-.texto_tennista h1 {
-  width: 450px;
-  font-size: 50px;
-  font-weight: 700;
-}
-.texto_tennista p {
-  max-width: 450px;
+  padding-left: 100px;
+  text-align: right;
+  h1 {
+    width: 450px;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    line-height: 1.14;
+  }
+  p {
+    width: 450px;
+  }
 }
 /* Fin estilos section_tennista */
 /* Estilos section_pros1 */
@@ -98,16 +103,20 @@ body {
   background-color: var(--violeta);
   color: var(--variante-gris-claro);
   display: flex;
-  gap: 100px;
+  justify-content: space-around;
   padding: 40px 220px;
-}
-
-.section_pros1 h2 {
-  font-size: 36px;
-  font-weight: 700;
+  h2 {
+    width: 460px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.14;
+  }
+  p {
+    width: 460px;
+    line-height: 1.5;
+  }
 }
 /* Fin estilos section_pros1 */
-
 /*Estilos Section Pros2*/
 .boton_section_pros2 {
   width: 69px;
