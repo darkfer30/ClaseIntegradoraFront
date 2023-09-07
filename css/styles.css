@@ -1,13 +1,150 @@
-.section_tennista{
-    display: flex;
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
+
+:root {
+  /* Violeta: #8B48BF
+Celeste brillante: #3CDDF3 */
+  /* Azul grisáceo oscuro: #1E1E26
+Azul muy oscuro: #232851
+Variante gris claro: rgb (249, 249, 249) */
+  --violeta: #8b48bf;
+  --celeste-brillante: #3cddf3;
+  --azul-grisaceo-oscuro: #1e1e26;
+  --azul-muy-oscuro: #232851;
+  --variante-gris-claro: rgb(249, 249, 249);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
 
+/* Estilos del header */
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 174px;
+}
 
+.header_logo {
+  height: 25px;
+}
 
-@media (max-width:480px){
-    .section_tennista{
-        flex-direction: column;
-    }
+.header_nav {
+  display: flex;
+  gap: 28px;
+}
+
+.header_nav li {
+  list-style: none;
+  font-size: 13px;
+  color: var(--azul-grisaceo-oscuro);
+}
+
+.header_nav li:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.clase_boton {
+  width: 134px;
+  height: 44px;
+  background-color: #8b48bf;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+/* Fin estilos del header */
+/* Estilos section_tennista */
+.section_tennista {
+  display: flex;
+  justify-content: center;
+}
+.section_tennista_container {
+  display: flex;
+  list-style: none;
+  max-width: 1090px;
+}
+.section_tennista img {
+  width: 540px;
+}
+.texto_tennista {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 28px;
+  margin-left: 100px;
+}
+.texto_tennista h1 {
+  width: 450px;
+  font-size: 50px;
+  font-weight: 700;
+}
+.texto_tennista p {
+  max-width: 450px;
+}
+/* Fin estilos section_tennista */
+/* Estilos section_pros1 */
+.section_pros1 {
+  background-color: var(--violeta);
+  color: var(--variante-gris-claro);
+  display: flex;
+  gap: 100px;
+  padding: 40px 220px;
+}
+
+.section_pros1 h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+/* Fin estilos section_pros1 */
+
+/*Estilos Section Pros2*/
+.boton_section_pros2 {
+  width: 69px;
+  height: 43px;
+  background-color: #8b48bf;
+  color: #ffffff;
+  padding: 10px 25px 10px 25px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/*footer*/
+footer {
+  display: flex;
+  background-color: #1e1e26;
+  color: rgb(249, 249, 249);
+  justify-content: space-around;
+  padding: 40px 20px;
+}
+.Union_logo_iconos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer li {
+  list-style: none;
+}
+
+.Flex_iconos {
+  display: flex;
+  gap: 13px;
+}
+
+@media (max-width: 480px) {
+  .section_tennista {
+    flex-direction: column;
+  }
 }
