@@ -54,6 +54,10 @@ body {
   cursor: pointer;
 }
 
+.header_hamburger {
+  display: none;
+}
+
 /* Fin estilos del header */
 /* Estilos section_tennista */
 .section_tenista {
@@ -91,6 +95,7 @@ body {
 .section_tenista_texto p {
   width: 450px;
 }
+
 .section_tenista_texto button {
   cursor: pointer;
 }
@@ -197,10 +202,12 @@ body {
   background-color: var(--variante-gris-claro);
   margin: 100px 0px 45px 0px;
 }
+
 .section_best button {
   cursor: pointer;
   transition: opacity 0.3s ease-in-out;
 }
+
 .section_best button:hover {
   opacity: 0.7;
 }
@@ -254,6 +261,7 @@ footer {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .Union_logo_iconos img {
   width: 106px;
 }
@@ -267,15 +275,10 @@ footer li {
   display: flex;
   gap: 13px;
 }
+
 .Flex_iconos li img {
   width: 20px;
   height: 20px;
-}
-
-@media (max-width: 480px) {
-  .section_tennista {
-    flex-direction: column;
-  }
 }
 
 .section_year {
@@ -310,6 +313,7 @@ footer li {
   gap: 16px;
   flex-direction: column;
 }
+
 .ListaConEspacios li {
   list-style-type: none;
   /* margin-bottom: 12px; */
@@ -332,6 +336,7 @@ input[type="email"] {
   padding: 20px 12px;
   background-color: #f0f0f0;
   border: 1px solid #ccc;
+  color: #a0a0a0;
   border-radius: 50px;
   font-size: 13px;
   font-family: inherit;
@@ -348,10 +353,12 @@ input[type="submit"] {
   cursor: pointer;
   font-family: inherit;
 }
+
 input[type="submit"]:hover {
   background-color: #8b48bf;
 }
 
+/* Fin footer */
 /* Reutilizable */
 .clase_boton {
   width: 134px;
@@ -365,4 +372,96 @@ input[type="submit"]:hover {
   font-size: 13px;
   font-weight: 500;
 }
+
 /* Fin reutilizable */
+
+@media (max-width: 480px) {
+
+  .header_nav,
+  .header_button {
+    display: none;
+  }
+
+  .header_hamburger {
+    display: block;
+  }
+
+  .section_tenista {
+    flex-direction: column;
+    padding: 0px;
+    display:none;
+  }
+
+  .section_tenista_img {
+    max-width: 400px;
+    display: none;
+  }
+  .section_tenista_texto {
+    display: none;
+  }
+  .section_tenista_texto h1 {
+    
+  
+  }
+  .section_tenista_texto p{
+    
+  }
+
+
+
+
+
+  .section_best_comments div:nth-child(odd) {
+    display: none;
+  }
+
+  .section_pros1 {
+    flex-direction: column;
+    background-color: var(--celeste-brillante);
+    padding: 0px;
+  }
+  .section_pros1 h2, .section_pros1 p{
+    width: auto;
+  }
+
+  .section_pros2_top {
+    flex-direction: column;
+  }
+.section_pros2_card{
+  width: auto;
+}
+  .section_pros2_card_title p {
+    color: var(--azul-muy-oscuro);
+    background-color: rgba(139, 72, 191, 0.3);
+    padding: 10px 0px;
+    width: 100%;
+    margin: 0px;
+  }
+  .section_pros2_card_body{
+    padding: 0px;
+  }
+.section_year{
+  flex-direction:column ;
+  padding: 0px;
+  background-color:var(--celeste-brillante);
+}
+
+.Goforlt{
+  background-color: var(--azul-muy-oscuro);
+  color: var(--variante-gris-claro)
+}
+
+footer{
+flex-direction: column-reverse;
+padding: 0px;
+height: auto;
+}
+
+.Union_logo_iconos{
+  flex-direction: column-reverse;
+}
+.Flex_iconos{
+  gap: 0px;
+  justify-content: space-around;
+}
+}
