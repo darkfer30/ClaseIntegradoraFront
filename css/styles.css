@@ -388,21 +388,18 @@ input[type="submit"]:hover {
   .section_tenista {
     flex-direction: column;
     padding: 0px;
-    display:none;
   }
 
   .section_tenista_img {
     max-width: 400px;
-    display: none;
   }
   .section_tenista_texto {
-    display: none;
   }
   .section_tenista_texto h1 {
-    
-  
+    width: auto;
   }
   .section_tenista_texto p{
+    width: auto;
     
   }
 
