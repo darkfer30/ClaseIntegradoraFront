@@ -32,7 +32,7 @@ body {
   height: 25px;
 }
 
-.header_nav {
+.header_nav { 
   display: flex;
   gap: 28px;
 }
@@ -89,6 +89,7 @@ body {
   width: 100%;
   height: auto;
   max-width: 540px;
+  max-width: 100%
 }
 
 .section_tenista_texto {
@@ -289,7 +290,7 @@ footer li {
   background-color: #8b48bf;
   color: rgb(249, 249, 249);
   justify-content: space-around;
-  padding: 52px 2px;
+  padding: 64px 210px 90px 165px;
 }
 
 .section_year p {
@@ -305,6 +306,8 @@ footer li {
   border: none;
   border-radius: 30px;
   cursor: pointer;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+
 }
 
 .ListaConEspacios {
@@ -320,3 +323,31 @@ footer li {
   text-align: right;
   padding: 0px 100px 30px 0px;
 }
+
+input[type="email"] {
+  width: 201px;
+  height: 44px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+
+}
+
+input[type="submit"] {
+  background-color: #8b48bf;
+  width: 63px;
+  height: 42px;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #8b48bf;
+}
+
+
+
