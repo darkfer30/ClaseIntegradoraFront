@@ -202,7 +202,6 @@ body {
   background-color: var(--variante-gris-claro);
   margin: 100px 0px 45px 0px;
 }
-
 .section_best button {
   cursor: pointer;
   transition: opacity 0.3s ease-in-out;
@@ -444,6 +443,11 @@ input[type="submit"]:hover {
   flex-direction:column ;
   padding: 0px;
   background-color:var(--celeste-brillante);
+}
+
+.section_best_comments_card {
+  width: auto;
+  padding: 52px 0px 20px 0px;
 }
 
 .Goforlt{
