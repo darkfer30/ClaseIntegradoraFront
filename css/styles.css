@@ -125,6 +125,7 @@ body {
 }
 .section_pros1 p:last-of-type {
   display: none;
+  line-height: 1.5;
 }
 
 /* Fin estilos section_pros1 */
@@ -162,7 +163,7 @@ body {
   height: 43px;
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   background-color: var(--violeta);
   color: white;
   border: none;
@@ -171,10 +172,11 @@ body {
   font-family: inherit;
 }
 
-.section_pros2_card_title p {
+.section_pros2_card_title h3 {
   font-weight: 500;
   margin-left: 20px;
   color: var(--azul-muy-oscuro);
+  font-size: 16px;
 }
 
 .section_pros2_card_body {
@@ -260,27 +262,27 @@ footer {
   height: 180px;
 }
 
-.Union_logo_iconos {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.Union_logo_iconos img {
-  width: 106px;
-}
-
 footer li {
   list-style: none;
   margin-bottom: 0px;
 }
 
-.Flex_iconos {
+.footer_logo_icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer_logo_icons img {
+  width: 106px;
+}
+
+.footer_logo_icons ul {
   display: flex;
   gap: 13px;
 }
 
-.Flex_iconos li img {
+.footer_logo_icons ul li img {
   width: 20px;
   height: 20px;
 }
@@ -295,11 +297,13 @@ footer li {
   padding: 0px 210px 0px 165px;
 }
 
-.section_year p {
+.section_year h4 {
   font-size: 40px;
 }
-
-.Goforlt {
+.section_year h4 br:nth-child(odd) {
+  display: none;
+}
+.section_year button {
   width: 134px;
   height: 44px;
   background-color: #fff;
@@ -312,18 +316,18 @@ footer li {
   font-family: inherit;
 }
 
-.ListaConEspacios {
+.footer_quick_access {
   display: flex;
   gap: 16px;
   flex-direction: column;
 }
 
-.ListaConEspacios li {
+.footer_quick_access li {
   list-style-type: none;
   /* margin-bottom: 12px; */
 }
 
-.Copyright {
+.copyright {
   bottom: 0;
   width: 100%;
   color: #8c8c94;
@@ -376,14 +380,12 @@ input[type="submit"]:hover {
   font-size: 13px;
   font-weight: 500;
 }
-
 /* Fin reutilizable */
 
 @media (max-width: 480px) {
-  .header{
-    justify-content:space-between;
+  .header {
+    justify-content: space-between;
     padding: 0px 56px;
-    
   }
   .header_nav,
   .header_button {
@@ -404,25 +406,26 @@ input[type="submit"]:hover {
     max-width: 400px;
     margin-bottom: 100px;
   }
-  
+
   .section_tenista_texto {
     padding: 0px;
   }
   .section_tenista_texto h1 {
     width: auto;
   }
-  .section_tenista_texto p{
+  .section_tenista_texto p {
     width: auto;
   }
-
 
   .section_pros1 {
     flex-direction: column;
     background-color: var(--celeste-brillante);
     padding: 40px 20px;
+    margin-bottom: 65px;
     gap: 50px;
   }
-  .section_pros1 h2, .section_pros1 p{
+  .section_pros1 h2,
+  .section_pros1 p {
     width: auto;
   }
   .section_pros1 p:first-of-type {
@@ -433,81 +436,99 @@ input[type="submit"]:hover {
   }
   .section_pros2 {
     background-color: white;
+    padding: 0px;
+    margin-bottom: 68px;
   }
-.section_pros2_top {
+  .section_pros2_top {
     flex-direction: column;
+    gap: 30px;
   }
-.section_pros2_card{
-  width: auto;
-}
-/* .section_pros2_card_title p::before {
-  background-color: rgba(139, 72, 191, 0.3);
-  content: "asd";
-  position: absolute;
-  left: 0px;
-} */
-  .section_pros2_card_title p {
-    color: var(--azul-muy-oscuro);
+  .section_pros2_bottom {
+    margin-top: 30px;
+  }
+  .section_pros2_card {
+    width: auto;
+  }
+  .section_pros2_card_title {
     background-color: rgba(139, 72, 191, 0.3);
-    padding: 10px 0px;
-    width: 100%;
+    position: relative;
+    margin-left: 60px;
+  }
+  .section_pros2_card_title span {
+    position: absolute;
+    left: -30px;
+  }
+  .section_pros2_card_title h3 {
+    color: var(--azul-muy-oscuro);
+    letter-spacing: -0.5px;
+    line-height: 43px;
+    height: 43px;
+    /* background-color: rgba(139, 72, 191, 0.3); */
+    padding-left: 56px;
     margin: 0px;
   }
 
-  .formulario{
-    padding: 40px 50px 0px 50px;
-  }
-
-  .section_pros2_card_body{
+  .section_pros2_card_body {
     padding: 31px 15px 0px 44px;
   }
 
-  .section_best{
-    padding: 18px 0px;
+  .section_best {
+    padding: 0px;
+    margin-bottom: 58px;
+  }
+  .section_best_comments {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .section_best_comments_card {
+    width: auto;
+    padding: 52px 20px 16px;
+  }
+  .section_best_comments div:nth-child(odd) {
+    display: none;
+  }
+  .section_year {
+    flex-direction: column;
+    padding: 0px;
+    background-color: var(--celeste-brillante);
+    height: auto;
+    gap: 50px;
+    padding: 40px 0px;
+  }
+  .section_year h4 {
+    width: auto;
+    padding: 0px;
+    height: auto;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .section_year h4 br:nth-child(odd) {
+    display: block;
+  }
+  .section_year button {
+    background-color: var(--azul-muy-oscuro);
+    color: var(--variante-gris-claro);
   }
 
-.section_best_comments_card {
-  width: auto;
-  padding: 52px 0px 20px 0px;
-}
-.section_best_comments div:nth-child(odd) {
-  display: none;
-}
-.section_year{
-  flex-direction:column ;
-  padding: 0px;
-  background-color:var(--celeste-brillante);
-}
-.section_year p{
-  width: auto;
-  padding: 0px;
-  height: auto;
-  justify-content: space-around
-}
+  footer {
+    flex-direction: column-reverse;
+    padding: 0px;
+    height: auto;
+  }
 
-.Goforlt{
-  background-color: var(--azul-muy-oscuro);
-  color: var(--variante-gris-claro)
-}
+  .footer_logo_icons {
+    flex-direction: column-reverse;
+  }
+  .footer_logo_icons ul {
+    padding: 92px 34px 103px 176px;
+    gap: 0px;
+    justify-content: space-around;
+  }
+  .footer_form {
+    padding: 40px 50px 0px 50px;
+  }
 
-footer{
-flex-direction: column-reverse;
-padding: 0px;
-height: auto;
+  .copyright {
+    padding: -11px 133px 50px 133px;
+  }
 }
-
-.Union_logo_iconos{
-  flex-direction: column-reverse;
-}
-.Flex_iconos{
-  padding: 92px 34px  103px 176px;
-  gap: 0px;
-  justify-content: space-around;
-}
-
-.Copyright{
-  padding: -11px 133px 50px 133px;
-}
-}
-
-
