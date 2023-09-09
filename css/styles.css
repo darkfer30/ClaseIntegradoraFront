@@ -119,9 +119,12 @@ body {
   line-height: 1.14;
 }
 
-.section_pros1 p {
+.section_pros1 p:first-of-type {
   width: 460px;
   line-height: 1.5;
+}
+.section_pros1 p:last-of-type {
+  display: none;
 }
 
 /* Fin estilos section_pros1 */
@@ -154,14 +157,16 @@ body {
   align-items: center;
 }
 
-.section_pros2_card_title button {
+.section_pros2_card_title span {
   width: 69px;
   height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
   background-color: var(--violeta);
   color: white;
   border: none;
   border-radius: 30px;
-  cursor: pointer;
   font-weight: 700;
   font-family: inherit;
 }
@@ -375,7 +380,11 @@ input[type="submit"]:hover {
 /* Fin reutilizable */
 
 @media (max-width: 480px) {
-
+  .header{
+    justify-content:space-between;
+    padding: 0px 56px;
+    
+  }
   .header_nav,
   .header_button {
     display: none;
@@ -387,45 +396,56 @@ input[type="submit"]:hover {
 
   .section_tenista {
     flex-direction: column;
-    padding: 0px;
+    padding: 0px 40px;
+    margin-bottom: 40px;
   }
 
   .section_tenista_img {
     max-width: 400px;
+    margin-bottom: 100px;
   }
+  
   .section_tenista_texto {
+    padding: 0px;
   }
   .section_tenista_texto h1 {
     width: auto;
   }
   .section_tenista_texto p{
     width: auto;
-    
   }
 
-
-
-
-
-  .section_best_comments div:nth-child(odd) {
-    display: none;
-  }
 
   .section_pros1 {
     flex-direction: column;
     background-color: var(--celeste-brillante);
-    padding: 0px;
+    padding: 40px 20px;
+    gap: 50px;
   }
   .section_pros1 h2, .section_pros1 p{
     width: auto;
   }
-
-  .section_pros2_top {
+  .section_pros1 p:first-of-type {
+    display: none;
+  }
+  .section_pros1 p:last-of-type {
+    display: block;
+  }
+  .section_pros2 {
+    background-color: white;
+  }
+.section_pros2_top {
     flex-direction: column;
   }
 .section_pros2_card{
   width: auto;
 }
+/* .section_pros2_card_title p::before {
+  background-color: rgba(139, 72, 191, 0.3);
+  content: "asd";
+  position: absolute;
+  left: 0px;
+} */
   .section_pros2_card_title p {
     color: var(--azul-muy-oscuro);
     background-color: rgba(139, 72, 191, 0.3);
@@ -433,18 +453,36 @@ input[type="submit"]:hover {
     width: 100%;
     margin: 0px;
   }
-  .section_pros2_card_body{
-    padding: 0px;
+
+  .formulario{
+    padding: 40px 50px 0px 50px;
   }
+
+  .section_pros2_card_body{
+    padding: 31px 15px 0px 44px;
+  }
+
+  .section_best{
+    padding: 18px 0px;
+  }
+
+.section_best_comments_card {
+  width: auto;
+  padding: 52px 0px 20px 0px;
+}
+.section_best_comments div:nth-child(odd) {
+  display: none;
+}
 .section_year{
   flex-direction:column ;
   padding: 0px;
   background-color:var(--celeste-brillante);
 }
-
-.section_best_comments_card {
+.section_year p{
   width: auto;
-  padding: 52px 0px 20px 0px;
+  padding: 0px;
+  height: auto;
+  justify-content: space-around
 }
 
 .Goforlt{
@@ -462,7 +500,14 @@ height: auto;
   flex-direction: column-reverse;
 }
 .Flex_iconos{
+  padding: 92px 34px  103px 176px;
   gap: 0px;
   justify-content: space-around;
 }
+
+.Copyright{
+  padding: -11px 133px 50px 133px;
 }
+}
+
+
